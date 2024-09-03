@@ -1,0 +1,9 @@
+Raw data exists as fastq files on GEO server (GSE189540). 
+
+Accessory scripts "edit_sam_*.py" are edited to remove ambiguous reads that fall entirely within duplicated regions 
+
+Fastq files are processed first with "cutrun_pipeline_v9_2021-10-16.py" to align, filter and normalize reads, followed by "cutrun_pipeline_part2_20211019.py" to generate bedgraph files. 
+
+Shell scripts  "find_chr19_lines.sh"  is  used to generate smaller bedgraphs for generating quantification plots. 
+
+Python scripts bedgraphAUC_HEK-AAVS1_v2_js.py is used to generate various plots quanitifying signal across elements of interest.  
